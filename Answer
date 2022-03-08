@@ -1,6 +1,7 @@
 liste = []
 x = 0
-for i in range(56):
+num = int(input(""))
+for i in range(num+1):
     if i == 0:
         liste.append(i)
         x+=1
@@ -9,10 +10,10 @@ for i in range(56):
         x +=1
     else:
         y = liste[x-2] + liste[x-1]
-        if y >56:
+        if y >num:
             break
         liste.append(y)
         x +=1
 print(liste)
 
-output = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+output = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55] for 56 numbers.
