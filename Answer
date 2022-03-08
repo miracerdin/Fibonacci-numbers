@@ -1,0 +1,18 @@
+liste = []
+x = 0
+for i in range(56):
+    if i == 0:
+        liste.append(i)
+        x+=1
+    elif i == 1:
+        liste.append(i)
+        x +=1
+    else:
+        y = liste[x-2] + liste[x-1]
+        if y >56:
+            break
+        liste.append(y)
+        x +=1
+print(liste)
+
+output = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
